@@ -44,15 +44,16 @@ class Router
 		Flight::route('/admin/product/edit/@id', [$admin, 'productEdit']);
 		Flight::route('/admin/product/delete/@id', [$admin, 'productDelete']);
 		Flight::route('/admin/users_all', [$admin, 'usersAll']);
-		Flight::route('/admin/users_all/@id', [$admin, 'userView']);
-		Flight::route('/admin/users_all/edit/@id', [$admin, 'userEdit']);
-		Flight::route('/admin/users_all/delete/@id', [$admin, 'userDelete']);
+		Flight::route('/admin/user/add', [$admin, 'userAdd']);
+		Flight::route('/admin/user/view/@id', [$admin, 'userView']);
+		Flight::route('/admin/user/edit/@id', [$admin, 'userEdit']);
+		Flight::route('/admin/user/delete/@id', [$admin, 'userDelete']);
 		Flight::route('/admin/profile', [$admin, 'profile']);
 		
 		Flight::route('/admin/charts', [$admin, 'charts']);		
 		Flight::route('/admin/tables', [$admin, 'tables']);
 		Flight::route('/admin/activity', [$admin, 'activity']);
-		//Flight::route('/admin/activity/@userid', [$admin, 'activityActivation']);
+		//Flight::route('/admin/activity/@id', [$admin, 'activityActivation']);
 		Flight::route('/admin/logout', [$admin, 'logout']);
 		
 		$userroom = new UserController();
