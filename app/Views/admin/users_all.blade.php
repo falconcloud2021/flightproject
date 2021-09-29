@@ -19,7 +19,7 @@
                             <h4 class="card-title"> Таблица с полным списком пользователей сайта</h4>
                             <p class="card-description"> Есть возможность выбора пользователя для установки прав доступа или дальнейшего удаления </p>
                             <span class="d-flex align-items-center purchase-popup">
-                                    <a href="/admin/client/edit">
+                                    <a href="/admin/user/add">
                                      <button class="mdi mdi-more btn btn-md btn-gradient-info mt-0" > + Добавить пользователя!</button>  
                                     </a>
                                  </span>
